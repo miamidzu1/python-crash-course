@@ -1,6 +1,6 @@
 
 # Modify this function to make the script work without errors.
-def multiply(a: int, b: int) -> int:
+def multiply(a:2, b=0) -> int:
     return a * b
 
 
