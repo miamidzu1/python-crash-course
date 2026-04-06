@@ -1,5 +1,8 @@
 def odd_str(n: int) -> str:
     s = ""
+    for i in range(n + 1):
+        if i % 2 != 0:
+            s = s +  str(i)
 
     # Use for loop to run from 0 to n (included) 
     # and form a string `s`.
