@@ -3,7 +3,13 @@ from typing import Any
 
 # Handle exception in the function body the way that this script works without errors
 def getter(d: dict[str, Any], key: str) -> Any:
-    return d[key]
+    try:
+
+        if not isinstance(d, dict):
+            return d
+        return d[key]
+    except (KeyError, TypeError):
+        return None
 
 
 # Do not modify the code below
