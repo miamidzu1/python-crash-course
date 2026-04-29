@@ -7,7 +7,7 @@
 # 1. "aabc" -> {"a": 2, "b": 1, "c": 1}
 # 2. "" -> {}
 def count_chars(s: str) -> dict[str, int]:
-    pass
+    return {char: s.count(char) for char in set(s)}
 
 
 # Do not change the below's code
